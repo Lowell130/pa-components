@@ -11505,6 +11505,15 @@ fieldset:disabled .btn {
   text-transform: uppercase;
 }
 
+.posts-section .post-body h2, .posts-section .post-body .h2 {
+  font-weight: 600;
+}
+
+.posts-section .post-info {
+  font-size: .8rem;
+  font-weight: 300;
+}
+
 .posts-section .text-img-over {
   position: relative;
 }

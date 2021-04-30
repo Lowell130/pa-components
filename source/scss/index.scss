@@ -55,13 +55,32 @@
 .posts-section {
     background: aliceblue;
     font-family: var(--font1);
+
     .title-section {
         font-weight: 700;
         text-transform: uppercase;
     }
 
+    .post-body h2 {
+
+        font-weight: 600;
+        // font-size: 1.3rem;
+        // @include media-breakpoint-up(md) {
+        //     font-size: 13rem;
+        // }
+    }
+
+    .post-info {
+        font-size: .8rem;
+        font-weight: 300;
+    }
+
+
+
+
     .text-img-over {
         position: relative;
+
         .card-img-top {
 
             border-top-left-radius: 0;
@@ -110,176 +129,178 @@
     }
 
 
-    .tag-list{
-    .tag {
-        
-        background: var(--bg-tag-color-1);
-        // padding: 5px 10px 5px 10px;
-        // border-top-left-radius: calc(.25rem - 1px);
-        text-transform: uppercase;
-        font-size: .8rem;
-        font-weight: 500;
-        margin-right: 5px;
-        color: var(--tx-tag-color-1);
-        z-index: 1;
+    .tag-list {
+        .tag {
 
-        a {
+            background: var(--bg-tag-color-1);
+            // padding: 5px 10px 5px 10px;
+            // border-top-left-radius: calc(.25rem - 1px);
+            text-transform: uppercase;
+            font-size: .8rem;
+            font-weight: 500;
+            margin-right: 5px;
             color: var(--tx-tag-color-1);
-            text-decoration: none;
-        }
+            z-index: 1;
 
-        a:hover {
-            color: var(--tx-tag-color-1);
-            text-decoration: underline;
-        }
+            a {
+                color: var(--tx-tag-color-1);
+                text-decoration: none;
+            }
 
+            a:hover {
+                color: var(--tx-tag-color-1);
+                text-decoration: underline;
+            }
+
+        }
     }
-}
 }
 
 // END BUTTON GENERAL
 .custom-slider {
     font-family: var(--font1);
     background: rgb(219, 234, 243);
+
     .title-section {
         font-weight: 700;
         text-transform: uppercase;
     }
 
     .swiper-container {
+
         // width: 600px;
         // height: 300px;
-          // START BOX-4
-    .card.box-4 {
-        background: var(--bg-col-3);
-        color: var(--tx-color-3);
-        // width: 200px;
+        // START BOX-4
+        .card.box-4 {
+            background: var(--bg-col-3);
+            color: var(--tx-color-3);
+            // width: 200px;
 
-        .card-header {
-            background: var(--bg-col-1);
-            color: var(--tx-color-1);
-            border-bottom: 0;
-
-            .fa-map-marker-alt {
+            .card-header {
+                background: var(--bg-col-1);
                 color: var(--tx-color-1);
+                border-bottom: 0;
 
-                &.grow {
-                    transition: all .2s ease-in-out;
+                .fa-map-marker-alt {
+                    color: var(--tx-color-1);
 
-                    &:hover {
-                        transform: scale(1.5);
+                    &.grow {
+                        transition: all .2s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.5);
+                        }
                     }
                 }
             }
-        }
 
-        .attached {
-            font-weight: 300;
-            font-size: .8rem;
-        }
-
-
-        .card-title {
-            line-height: 35px;
-            color: var(--tx-color-3);
-
-            .day {
-                font-weight: 600;
-                font-size: 3.5rem;
-
-            }
-
-            .month {
-                font-size: 1.5rem;
-
+            .attached {
                 font-weight: 300;
-
+                font-size: .8rem;
             }
-        }
-    }
-
-    // END BOX-4
-     // START BOX-5
-     .card.box-5 {
-        background: var(--bg-col-2);
-        color: var(--tx-color-1);
-
-        .card-header {
-            background: var(--bg-col-1);
-            border-bottom: 0;
-        }
 
 
+            .card-title {
+                line-height: 35px;
+                color: var(--tx-color-3);
 
-        .attached {
-            font-weight: 300;
-            font-size: .8rem;
+                .day {
+                    font-weight: 600;
+                    font-size: 3.5rem;
 
-            .link {
-                color: var(--tx-color-1);
-
-                &:hover {
-                    text-decoration: none;
                 }
-            }
-
-
-        }
-
-        .card-title {
-            line-height: 35px;
-
-
-            .day {
-                font-weight: 600;
-                font-size: 3.5rem;
-                color: var(--tx-color-1);
-            }
-
-            .cal-y {
-                display: grid;
-                line-height: 21px;
 
                 .month {
                     font-size: 1.5rem;
-                    color: var(--tx-color-1);
+
                     font-weight: 300;
 
                 }
-
-                .year {
-                    font-size: 1.2rem;
-                    color: var(--tx-color-1);
-                    font-weight: 700;
-
-                }
             }
-
         }
 
-        .card-footer {
+        // END BOX-4
+        // START BOX-5
+        .card.box-5 {
             background: var(--bg-col-2);
+            color: var(--tx-color-1);
 
-            // border-top: 0;   
-            .fa-map-marker-alt {
-                color: var(--tx-color-1);
+            .card-header {
+                background: var(--bg-col-1);
+                border-bottom: 0;
+            }
 
-                &.grow {
-                    transition: all .2s ease-in-out;
+
+
+            .attached {
+                font-weight: 300;
+                font-size: .8rem;
+
+                .link {
+                    color: var(--tx-color-1);
 
                     &:hover {
-                        transform: scale(1.5);
+                        text-decoration: none;
+                    }
+                }
+
+
+            }
+
+            .card-title {
+                line-height: 35px;
+
+
+                .day {
+                    font-weight: 600;
+                    font-size: 3.5rem;
+                    color: var(--tx-color-1);
+                }
+
+                .cal-y {
+                    display: grid;
+                    line-height: 21px;
+
+                    .month {
+                        font-size: 1.5rem;
+                        color: var(--tx-color-1);
+                        font-weight: 300;
+
+                    }
+
+                    .year {
+                        font-size: 1.2rem;
+                        color: var(--tx-color-1);
+                        font-weight: 700;
+
+                    }
+                }
+
+            }
+
+            .card-footer {
+                background: var(--bg-col-2);
+
+                // border-top: 0;   
+                .fa-map-marker-alt {
+                    color: var(--tx-color-1);
+
+                    &.grow {
+                        transition: all .2s ease-in-out;
+
+                        &:hover {
+                            transform: scale(1.5);
+                        }
                     }
                 }
             }
         }
+
+        // END BOX-5
     }
 
-    // END BOX-5
-      }
-    
 
-  
+
 
 }
 
