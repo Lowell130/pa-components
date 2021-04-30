@@ -54,13 +54,145 @@
 
 
 .interest-section {
-    background: aliceblue;
+    background: var(--bg-col-3);
     font-family: var(--font1);
+
     .title-section {
         font-weight: 700;
         text-transform: uppercase;
     }
 
+    .card.ins-1 {
+        background-color: #dc3545;
+
+        .card-body {
+            color: #fff;
+            min-height: 78px;
+
+            .title-box {
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+
+                    .icon-left {
+                        font-size: 1.3rem;
+                        transition: all .2s ease-in-out;
+
+                        @include media-breakpoint-up(md) {
+                            font-size: 2rem;
+                        }
+
+                        margin: 0 10px 0 0;
+                    }
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+
+                        &:hover {
+                            // color: yellow;
+                        }
+
+                        &:hover .icon-left {
+                            // color: chartreuse;  
+                            transform: translateY(-3px);
+
+                        }
+
+
+
+                    }
+
+
+                }
+
+
+
+            }
+        }
+    }
+
+    .card.ins-2 {
+        background: var(--bg-col-1);
+
+        .card-body {
+            color: #fff;
+            min-height: 78px;
+
+            .title-box {
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+
+                    .icon-left {
+                        font-size: 1.3rem;
+                        transition: all .2s ease-in-out;
+
+                        @include media-breakpoint-up(md) {
+                            font-size: 2rem;
+                        }
+
+                        margin: 0 10px 0 0;
+                    }
+
+                    a {
+                        color: #fff;
+                        text-decoration: none;
+
+                        &:hover {
+                            // color: yellow;
+                        }
+
+                        &:hover .icon-left {
+                            // color: chartreuse;  
+                            transform: translateY(-3px);
+
+                        }
+
+
+
+                    }
+
+
+                }
+
+
+
+            }
+        }
+    }
+
+    .card.ins-3 {
+        background: var(--bg-col-1);
+
+        .card-body {
+            color: #fff;
+            min-height: 78px;
+
+            .icon-right {
+                font-size: 1.3rem;
+
+                @include media-breakpoint-up(md) {
+                    font-size: 2.5rem;
+                }
+
+                color: #fff;
+                margin: 0 10px 0 10px;
+            }
+
+
+
+            h3 {
+                font-weight: 700;
+                font-size: 1.2rem;
+                margin-left: 10px;
+
+            }
+
+        }
+    }
+
+    
 }
 
 .posts-section {
@@ -144,7 +276,7 @@
     //     .tag {
 
     //         background: var(--bg-tag-color-1);
-     
+
     //         text-transform: uppercase;
     //         font-size: .8rem;
     //         font-weight: 500;

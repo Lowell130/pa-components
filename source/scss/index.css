@@ -11496,13 +11496,114 @@ fieldset:disabled .btn {
 }
 
 .interest-section {
-  background: aliceblue;
+  background: var(--bg-col-3);
   font-family: var(--font1);
 }
 
 .interest-section .title-section {
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.interest-section .card.ins-1 {
+  background-color: #dc3545;
+}
+
+.interest-section .card.ins-1 .card-body {
+  color: #fff;
+  min-height: 78px;
+}
+
+.interest-section .card.ins-1 .card-body .title-box h3, .interest-section .card.ins-1 .card-body .title-box .h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.interest-section .card.ins-1 .card-body .title-box h3 .icon-left, .interest-section .card.ins-1 .card-body .title-box .h3 .icon-left {
+  font-size: 1.3rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin: 0 10px 0 0;
+}
+
+@media (min-width: 768px) {
+  .interest-section .card.ins-1 .card-body .title-box h3 .icon-left, .interest-section .card.ins-1 .card-body .title-box .h3 .icon-left {
+    font-size: 2rem;
+  }
+}
+
+.interest-section .card.ins-1 .card-body .title-box h3 a, .interest-section .card.ins-1 .card-body .title-box .h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.interest-section .card.ins-1 .card-body .title-box h3 a:hover .icon-left, .interest-section .card.ins-1 .card-body .title-box .h3 a:hover .icon-left {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.interest-section .card.ins-2 {
+  background: var(--bg-col-1);
+}
+
+.interest-section .card.ins-2 .card-body {
+  color: #fff;
+  min-height: 78px;
+}
+
+.interest-section .card.ins-2 .card-body .title-box h3, .interest-section .card.ins-2 .card-body .title-box .h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+
+.interest-section .card.ins-2 .card-body .title-box h3 .icon-left, .interest-section .card.ins-2 .card-body .title-box .h3 .icon-left {
+  font-size: 1.3rem;
+  -webkit-transition: all .2s ease-in-out;
+  transition: all .2s ease-in-out;
+  margin: 0 10px 0 0;
+}
+
+@media (min-width: 768px) {
+  .interest-section .card.ins-2 .card-body .title-box h3 .icon-left, .interest-section .card.ins-2 .card-body .title-box .h3 .icon-left {
+    font-size: 2rem;
+  }
+}
+
+.interest-section .card.ins-2 .card-body .title-box h3 a, .interest-section .card.ins-2 .card-body .title-box .h3 a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.interest-section .card.ins-2 .card-body .title-box h3 a:hover .icon-left, .interest-section .card.ins-2 .card-body .title-box .h3 a:hover .icon-left {
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+.interest-section .card.ins-3 {
+  background: var(--bg-col-1);
+}
+
+.interest-section .card.ins-3 .card-body {
+  color: #fff;
+  min-height: 78px;
+}
+
+.interest-section .card.ins-3 .card-body .icon-right {
+  font-size: 1.3rem;
+  color: #fff;
+  margin: 0 10px 0 10px;
+}
+
+@media (min-width: 768px) {
+  .interest-section .card.ins-3 .card-body .icon-right {
+    font-size: 2.5rem;
+  }
+}
+
+.interest-section .card.ins-3 .card-body h3, .interest-section .card.ins-3 .card-body .h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-left: 10px;
 }
 
 .posts-section {
