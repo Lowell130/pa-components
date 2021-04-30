@@ -11495,6 +11495,16 @@ fieldset:disabled .btn {
   border-color: var(--bg-col-4);
 }
 
+.interest-section {
+  background: aliceblue;
+  font-family: var(--font1);
+}
+
+.interest-section .title-section {
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
 .posts-section {
   background: aliceblue;
   font-family: var(--font1);
