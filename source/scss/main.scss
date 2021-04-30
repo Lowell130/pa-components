@@ -1,0 +1,823 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap");
+@import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
+@import "bootstrap/bootstrap";
+
+
+:root {
+    /* GENERAL FONT */
+    --font1: "Titillium Web", sans-serif;
+    /* GENERAL COLOR */
+    --bg-col-1: #0059b3;
+    --bg-col-2: #dc3545;
+    --bg-col-3: #fff;
+    --bg-col-4: #024c96;
+    --tx-color-1: #fff;
+    --tx-color-2: #000;
+    --tx-color-3: #0059b3;
+
+    // FOCUS START
+    /* READ MORE COLOR */
+    --tx-rm-color-1: #fff;
+    --bg-rm-color-1: #fff;
+    /* TAG BOTTOM-RIGHT COLOR */
+    --tx-tag-color-1: #fff;
+    --bg-tag-color-1: #0059b3;
+    /* FOOTER CARD COLOR */
+    --bg-ft-col-1: #0059b3;
+    --tx-ft-color-1: #fff;
+    // FOCUS END
+}
+
+// BUTTON GENERAL
+.btn-archive {
+    color: var(--tx-color-1);
+    background-color: var(--bg-col-1);
+    border-color: var(--bg-col-1);
+
+    &:hover {
+        color: var(--tx-color-1);
+        background-color: var(--bg-col-4);
+        border-color: var(--bg-col-4);
+    }
+}
+
+// END BUTTON GENERAL
+
+.slider-section  {
+
+    font-family: var(--font1);
+    background: rgb(219, 234, 243);
+
+    .title-section {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    // START BOX-1
+    .card.box-1 {
+        background: var(--bg-col-1);
+        color: var(--tx-color-1);
+
+        .card-title {
+            line-height: 35px;
+
+            .day {
+                font-weight: 600;
+                font-size: 3.5rem;
+                color: var(--tx-color-1);
+            }
+
+            .month {
+                font-size: 1.5rem;
+                color: var(--tx-color-1);
+                font-weight: 300;
+
+            }
+        }
+
+        .card-footer {
+            background: var(--bg-col-1);
+            border-top: 0;
+            .fa-map-marker-alt {
+                color: var(--tx-color-1);
+                &.up {
+                    transition: all .2s ease-in-out;
+             
+
+                    &:hover {
+                        transform: translateY(-5px);
+                      
+                    }
+                }
+            }
+        }
+    }
+
+    // END BOX-1
+    // START BOX-2
+    .card.box-2 {
+        background: var(--bg-col-1);
+        color: var(--tx-color-1);
+
+        .card-header {
+            background: var(--bg-col-1);
+            border-bottom: 0;
+            .fa-map-marker-alt {
+                color: var(--tx-color-1);
+                &.up {
+                    transition: all .2s ease-in-out;
+             
+
+                    &:hover {
+                        transform: translateY(-5px);
+                      
+                    }
+                }
+            }
+        }
+
+        .card-title {
+            line-height: 35px;
+
+            .day {
+                font-weight: 600;
+                font-size: 3.5rem;
+                color: var(--tx-color-1);
+            }
+
+            .month {
+                font-size: 1.5rem;
+                color: var(--tx-color-1);
+                font-weight: 300;
+
+            }
+        }
+
+        .card-footer {
+            background: var(--bg-col-1);
+            border-top: 0;
+        }
+    }
+
+    // END BOX-2
+    // START BOX-3
+    .card.box-3 {
+        background: var(--bg-col-2);
+        color: var(--tx-color-1);
+
+        .card-header {
+            background: var(--bg-col-1);
+            border-bottom: 0;
+        }
+
+        .attached {
+            font-weight: 300;
+            font-size: .8rem;
+        }
+
+        .card-title {
+            line-height: 35px;
+
+            .day {
+                font-weight: 600;
+                font-size: 3.5rem;
+                color: var(--tx-color-1);
+            }
+
+            .month {
+                font-size: 1.5rem;
+                color: var(--tx-color-1);
+                font-weight: 300;
+
+            }
+        }
+
+        .card-footer {
+            background: var(--bg-col-2);
+            border-top: 0;
+            .fa-map-marker-alt {
+                color: var(--tx-color-1);
+                &.up {
+                    transition: all .2s ease-in-out;
+             
+
+                    &:hover {
+                        transform: translateY(-5px);
+                      
+                    }
+                }
+            }
+        }
+    }
+
+    // END BOX-3
+
+
+    // START BOX-4
+    .card.box-4 {
+        background: var(--bg-col-3);
+        color: var(--tx-color-3);
+
+        .card-header {
+            background: var(--bg-col-1);
+            color: var(--tx-color-1);
+            border-bottom: 0;
+            .fa-map-marker-alt {
+                color: var(--tx-color-1);
+                &.grow {
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+
+        .attached {
+            font-weight: 300;
+            font-size: .8rem;
+        }
+
+
+        .card-title {
+            line-height: 35px;
+            color: var(--tx-color-3);
+
+            .day {
+                font-weight: 600;
+                font-size: 3.5rem;
+
+            }
+
+            .month {
+                font-size: 1.5rem;
+
+                font-weight: 300;
+
+            }
+        }
+    }
+
+    // END BOX-4
+
+    // START BOX-5
+    .card.box-5 {
+        background: var(--bg-col-2);
+        color: var(--tx-color-1);
+
+        .card-header {
+            background: var(--bg-col-1);
+            border-bottom: 0;
+        }
+
+
+
+        .attached {
+            font-weight: 300;
+            font-size: .8rem;
+
+            .link {
+                color: var(--tx-color-1);
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+
+        }
+
+        .card-title {
+            line-height: 35px;
+
+
+            .day {
+                font-weight: 600;
+                font-size: 3.5rem;
+                color: var(--tx-color-1);
+            }
+
+            .cal-y {
+                display: grid;
+                line-height: 21px;
+
+                .month {
+                    font-size: 1.5rem;
+                    color: var(--tx-color-1);
+                    font-weight: 300;
+
+                }
+
+                .year {
+                    font-size: 1.2rem;
+                    color: var(--tx-color-1);
+                    font-weight: 700;
+
+                }
+            }
+
+        }
+
+        .card-footer {
+            background: var(--bg-col-2);
+
+            // border-top: 0;   
+            .fa-map-marker-alt {
+                color: var(--tx-color-1);
+                &.grow {
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+
+    // END BOX-5
+
+}
+
+.agenda-section {
+    font-family: var(--font1);
+    background: rgb(219, 234, 243);
+
+    .title-section {
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    // START BOX-1
+    .card.box-1 {
+        background: var(--bg-col-1);
+        color: var(--tx-color-1);
+
+        .card-title {
+            line-height: 35px;
+
+            .day {
+                font-weight: 600;
+                font-size: 3.5rem;
+                color: var(--tx-color-1);
+            }
+
+            .month {
+                font-size: 1.5rem;
+                color: var(--tx-color-1);
+                font-weight: 300;
+
+            }
+        }
+
+        .card-footer {
+            background: var(--bg-col-1);
+            border-top: 0;
+            .fa-map-marker-alt {
+                color: var(--tx-color-1);
+                &.up {
+                    transition: all .2s ease-in-out;
+             
+
+                    &:hover {
+                        transform: translateY(-5px);
+                      
+                    }
+                }
+            }
+        }
+    }
+
+    // END BOX-1
+    // START BOX-2
+    .card.box-2 {
+        background: var(--bg-col-1);
+        color: var(--tx-color-1);
+
+        .card-header {
+            background: var(--bg-col-1);
+            border-bottom: 0;
+            .fa-map-marker-alt {
+                color: var(--tx-color-1);
+                &.up {
+                    transition: all .2s ease-in-out;
+             
+
+                    &:hover {
+                        transform: translateY(-5px);
+                      
+                    }
+                }
+            }
+        }
+
+        .card-title {
+            line-height: 35px;
+
+            .day {
+                font-weight: 600;
+                font-size: 3.5rem;
+                color: var(--tx-color-1);
+            }
+
+            .month {
+                font-size: 1.5rem;
+                color: var(--tx-color-1);
+                font-weight: 300;
+
+            }
+        }
+
+        .card-footer {
+            background: var(--bg-col-1);
+            border-top: 0;
+        }
+    }
+
+    // END BOX-2
+    // START BOX-3
+    .card.box-3 {
+        background: var(--bg-col-2);
+        color: var(--tx-color-1);
+
+        .card-header {
+            background: var(--bg-col-1);
+            border-bottom: 0;
+        }
+
+        .attached {
+            font-weight: 300;
+            font-size: .8rem;
+        }
+
+        .card-title {
+            line-height: 35px;
+
+            .day {
+                font-weight: 600;
+                font-size: 3.5rem;
+                color: var(--tx-color-1);
+            }
+
+            .month {
+                font-size: 1.5rem;
+                color: var(--tx-color-1);
+                font-weight: 300;
+
+            }
+        }
+
+        .card-footer {
+            background: var(--bg-col-2);
+            border-top: 0;
+            .fa-map-marker-alt {
+                color: var(--tx-color-1);
+                &.up {
+                    transition: all .2s ease-in-out;
+             
+
+                    &:hover {
+                        transform: translateY(-5px);
+                      
+                    }
+                }
+            }
+        }
+    }
+
+    // END BOX-3
+
+
+    // START BOX-4
+    .card.box-4 {
+        background: var(--bg-col-3);
+        color: var(--tx-color-3);
+
+        .card-header {
+            background: var(--bg-col-1);
+            color: var(--tx-color-1);
+            border-bottom: 0;
+            .fa-map-marker-alt {
+                color: var(--tx-color-1);
+                &.grow {
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+
+        .attached {
+            font-weight: 300;
+            font-size: .8rem;
+        }
+
+
+        .card-title {
+            line-height: 35px;
+            color: var(--tx-color-3);
+
+            .day {
+                font-weight: 600;
+                font-size: 3.5rem;
+
+            }
+
+            .month {
+                font-size: 1.5rem;
+
+                font-weight: 300;
+
+            }
+        }
+    }
+
+    // END BOX-4
+
+    // START BOX-5
+    .card.box-5 {
+        background: var(--bg-col-2);
+        color: var(--tx-color-1);
+
+        .card-header {
+            background: var(--bg-col-1);
+            border-bottom: 0;
+        }
+
+
+
+        .attached {
+            font-weight: 300;
+            font-size: .8rem;
+
+            .link {
+                color: var(--tx-color-1);
+
+                &:hover {
+                    text-decoration: none;
+                }
+            }
+
+
+        }
+
+        .card-title {
+            line-height: 35px;
+
+
+            .day {
+                font-weight: 600;
+                font-size: 3.5rem;
+                color: var(--tx-color-1);
+            }
+
+            .cal-y {
+                display: grid;
+                line-height: 21px;
+
+                .month {
+                    font-size: 1.5rem;
+                    color: var(--tx-color-1);
+                    font-weight: 300;
+
+                }
+
+                .year {
+                    font-size: 1.2rem;
+                    color: var(--tx-color-1);
+                    font-weight: 700;
+
+                }
+            }
+
+        }
+
+        .card-footer {
+            background: var(--bg-col-2);
+
+            // border-top: 0;   
+            .fa-map-marker-alt {
+                color: var(--tx-color-1);
+                &.grow {
+                    transition: all .2s ease-in-out;
+
+                    &:hover {
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+    }
+
+    // END BOX-5
+
+}
+
+
+.focus-section {
+    background: aliceblue;
+    font-family: var(--font1);
+
+    .title-section {
+
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+    .card {
+
+        font-size: 1rem;
+
+
+        .card-image {
+            position: relative;
+
+            .image-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s ease;
+                background: rgba(0, 89, 179, 0.5);
+            }
+
+            &:hover .image-overlay {
+                opacity: 1;
+            }
+        }
+
+        .text-img-over {
+            position: relative;
+
+
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s ease;
+                background-color: var(--bg-col-1);
+            }
+
+            &:hover .overlay {
+                opacity: 1;
+            }
+        }
+
+        .social-hover {
+            color: var(--tx-color-1);
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
+
+
+            .fa-share-alt {
+                color: var(--tx-color-1);
+
+                &:hover {
+                    color: var(--tx-color-1);
+                }
+            }
+
+
+        }
+
+        .hover-text {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+
+        .bottom-right-tag {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: var(--bg-tag-color-1);
+            padding: 5px 10px 5px 10px;
+            border-top-left-radius: calc(.25rem - 1px);
+            font-size: 0.8rem;
+            font-weight: 200;
+            color: var(--tx-tag-color-1);
+            z-index: 1;
+
+            a {
+                color: var(--tx-tag-color-1);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: var(--tx-tag-color-1);
+                text-decoration: underline;
+            }
+
+        }
+
+
+
+        .sub-cat {
+            font-weight: 600;
+            font-size: 0.8rem;
+
+            .bg-category {
+                background: var(--bg-col-1);
+                color: var(--tx-color-1);
+            }
+        }
+
+
+
+        .card-title {
+            font-family: var(--font1);
+            font-weight: 600;
+            font-size: 1.3rem;
+            /* height: 73px;
+  overflow: hidden; */
+        }
+
+        .card-footer {
+            background-color: var(--bg-ft-col-1);
+            color: var(--tx-ft-color-1);
+
+            .card-footer__info {
+                font-size: 1rem;
+                font-weight: 300;
+                position: relative;
+            }
+
+        }
+
+
+        .read-more {
+            position: absolute;
+            right: 0;
+            font-weight: 600;
+        }
+
+        .read-more-1 {
+            text-decoration: none;
+            position: relative;
+            color: var(--tx-rm-color-1);
+        }
+
+        .read-more-1::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--bg-rm-color-1);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 250ms ease-in;
+        }
+
+        .read-more-1:hover {
+            color: var(--tx-rm-color-1);
+        }
+
+        .read-more-1:hover::after {
+            transform: scaleX(1);
+            transform-origin: right;
+            color: var(--tx-rm-color-1);
+        }
+
+        .read-more-2 {
+            text-decoration: none;
+            position: relative;
+            margin-right: 15px;
+            color: var(--tx-rm-color-1);
+        }
+
+        .read-more-2::after {
+            content: "";
+            /* You should use \ and not /*/
+            font-family: "Font Awesome 5 Free";
+            /* This is the correct font-family*/
+            position: absolute;
+            right: -18px;
+            bottom: 0;
+            color: var(--tx-rm-color-1);
+        }
+
+        .read-more-2:hover {
+            color: var(--tx-rm-color-1);
+        }
+
+        .read-more-2:hover::after {
+            transform: translate(3px, 0);
+            transition: all 0.1s ease-in;
+            color: var(--tx-rm-color-1);
+        }
+
+        .read-more-3 {
+            text-decoration: none;
+            position: relative;
+            color: var(--tx-rm-color-1);
+        }
+
+        .read-more-3:hover {
+            color: var(--tx-rm-color-1);
+            text-decoration: underline;
+        }
+
+
+    }
+}
