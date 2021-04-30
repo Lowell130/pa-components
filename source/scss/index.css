@@ -11560,26 +11560,6 @@ fieldset:disabled .btn {
   color: var(--tx-color-1);
 }
 
-.posts-section .tag-list .tag {
-  background: var(--bg-tag-color-1);
-  text-transform: uppercase;
-  font-size: .8rem;
-  font-weight: 500;
-  margin-right: 5px;
-  color: var(--tx-tag-color-1);
-  z-index: 1;
-}
-
-.posts-section .tag-list .tag a {
-  color: var(--tx-tag-color-1);
-  text-decoration: none;
-}
-
-.posts-section .tag-list .tag a:hover {
-  color: var(--tx-tag-color-1);
-  text-decoration: underline;
-}
-
 .custom-slider {
   font-family: var(--font1);
   background: #dbeaf3;
@@ -12330,7 +12310,7 @@ fieldset:disabled .btn {
 
 .focus-section .card .sub-cat {
   font-weight: 600;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 .focus-section .card .sub-cat .bg-category {
