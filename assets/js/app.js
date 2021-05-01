@@ -4,11 +4,23 @@ function myFunction() {
   var element = document.body;
   element.classList.toggle("dark-mode");
 
+  var x = document.getElementById("btnValue");
+  if (x.innerHTML === "Dark mode") {
+    x.innerHTML = "Light mode";
+    x.classList.remove('btn-dark')
+    x.classList.toggle('btn-light')
+  } else {
+    x.innerHTML = "Dark mode";
+    x.classList.remove('btn-light')
+    x.classList.toggle('btn-dark')
+  }
+// NAVBAR CHANGE
+  var xnav = document.getElementById("navBar")
 
-  document.getElementById("navBar").classList.toggle('navbar-dark'); 
-  document.getElementById("navBar").classList.toggle('bg-dark');
+  xnav.classList.toggle('navbar-dark');
+  xnav.classList.toggle('bg-dark');
 
-  
+
 }
 
 
