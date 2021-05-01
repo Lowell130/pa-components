@@ -1,3 +1,18 @@
+
+// TOGGLE DARK MODE
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-mode");
+
+
+  document.getElementById("navBar").classList.toggle('navbar-dark'); 
+  document.getElementById("navBar").classList.toggle('bg-dark');
+
+  
+}
+
+
+// SLIDER
 var swiper = new Swiper('.swiper-container', {
   slidesPerView: 1,
   spaceBetween: 10,
@@ -5,7 +20,7 @@ var swiper = new Swiper('.swiper-container', {
     delay: 5000,
   },
   // init: false,
-  
+
   pagination: {
     el: '.swiper-pagination',
     clickable: true,
@@ -23,7 +38,7 @@ var swiper = new Swiper('.swiper-container', {
       slidesPerView: 3,
       spaceBetween: 10,
     },
-    
+
     1024: {
       slidesPerView: 5,
       spaceBetween: 10,

@@ -2,7 +2,9 @@
 @import url("https://use.fontawesome.com/releases/v5.13.0/css/all.css");
 @import "bootstrap/bootstrap";
 
-
+body {
+    background: #121212;
+}
 
 :root {
     /* GENERAL FONT */
@@ -20,15 +22,119 @@
     --tx-rm-color-1: #fff;
     --bg-rm-color-1: #fff;
     /* TAG BOTTOM-RIGHT COLOR */
-    --tx-tag-color-1: #fff;
-    --bg-tag-color-1: #0059b3;
+
     /* FOOTER CARD COLOR */
     --bg-ft-col-1: #0059b3;
     --tx-ft-color-1: #fff;
-    // FOCUS END
+
+    // INTEREST
+    --bg-interest-section: rgb(255, 255, 255);
+    --tx-interest-section-title: #212529;
+    // INTEREST CARD 1
+    --bg-interest-card1: #dc3545;
+    --tx-interest-card1-body: #fff;
+    --tx-interest-card1-link: #fff;
+    // INTEREST CARD 2
+    --bg-interest-card2: #0059b3;
+    --tx-interest-card2-body: #fff;
+    --tx-interest-card2-link: #fff;
+    // post section
+    --tx-post-section-title: #212529;
+    --bg-post-section: aliceblue;
+
+    --bg-post-title: #fff;
+    --tx-post-title: #212529;
+    --bg-post-image-overlay: rgba(0, 89, 179, 0.5);
+
+    // focus section
+    --tx-focus-section-title: #212529;
+    --bg-focus-section: aliceblue;
+    --bg-focus-card-overlay: rgba(0, 89, 179, 0.5);
+    --tx-focus-hover: #fff;
+
+    --tx-focus-font-weight: 400;
+
+    --tx-focus-tag-color-1: #fff;
+    --bg-focus-tag-color-1: #0059b3;
+
+    --bg-focus-cat: #0059b3;
+    --tx-focus-cat: #fff;
+
+    --bg-focus-footer: #0059b3;
+    --tx-focus-footer: #fff;
+
+    
+    --bg-focus-card: #fff;
+    --tx-focus-card: #000;
+
+    //button arrow & archive
+    --tx-button: #fff;
+    --bg-button: #0059b3;
 }
 
 
+.dark-mode {
+
+    /* GENERAL COLOR */
+    --bg-col-1: #121212;
+    --tx-color-1: #fff;
+
+    //button arrow & archive
+    --tx-button: #fff;
+    --bg-button: #272727;
+    --bg-button-border: #272727;
+    --bg-button-hover: #fff;
+    --tx-button-hover: #272727;
+    --bg-button-focus: #0f0f0f40;
+    
+
+
+
+    // INTEREST
+    --bg-interest-section: #121212;
+    --tx-interest-section-title: #fff;
+    // INTEREST CARD 1
+    --bg-interest-card1: #272727;
+    --tx-interest-card1-body: #fff;
+    --tx-interest-card1-link: #fff;
+    // INTEREST CARD 2
+    --bg-interest-card2: #272727;
+    --tx-interest-card2-body: #fff;
+    --tx-interest-card2-link: #fff;
+
+    //posts-section
+    --tx-post-section-title: #fff;
+    --bg-post-section: #121212;
+    --bg-post-title: #272727;
+    --tx-post-title: #fff;
+    --bg-post-image-overlay: rgba(0, 0, 0, 0.5);
+
+
+    //focus-section
+    --tx-focus-section-title: #fff;
+    --bg-focus-section: #121212;
+    --bg-focus-card-overlay: rgba(0, 0, 0, 0.5);
+    --tx-focus-hover: #fff;
+    
+    --bg-focus-card: #272727;
+    --tx-focus-card: #fff;
+
+    --tx-focus-font-weight: 100;
+
+
+    --tx-focus-tag-color-1: #fff;
+    --bg-focus-tag-color-1: #272727;
+
+    --tx-focus-cat: #272727;
+    --bg-focus-cat: #fff;
+    --tx-focus-tag-a:#fff;
+
+    --bg-focus-footer: #272727;
+    --tx-focus-footer: #fff;
+    --focus-border-card: 0;
+
+
+}
 
 
 
@@ -41,176 +147,287 @@
 
 // BUTTON GENERAL
 .btn-archive {
-    color: var(--tx-color-1);
-    background-color: var(--bg-col-1);
-    border-color: var(--bg-col-1);
+    color: var(--tx-button);
+    background: var(--bg-button);
+    border-color: var(--bg-button-border);
+    
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
 
     &:hover {
-        color: var(--tx-color-1);
-        background-color: var(--bg-col-4);
-        border-color: var(--bg-col-4);
+        color: var(--tx-button-hover);
+        background-color: var(--bg-button-hover);
+        border-color: var(--bg-button-hover);
     }
+
+    &:focus {
+        -webkit-box-shadow: 0 0 0 0.25rem var(--bg-button-focus);
+        box-shadow: 0 0 0 0.25rem var(--bg-button-focus);
+    }
+
+
+
+
 }
 
-
-.interest-section {
-    background: var(--bg-col-3);
+.focus-section {
+    background: var(--bg-focus-section);
     font-family: var(--font1);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
 
     .title-section {
         font-weight: 700;
         text-transform: uppercase;
+        color: var(--tx-focus-section-title);
     }
 
-    .card.ins-1 {
-        background-color: #dc3545;
-
-        .card-body {
-            color: #fff;
-            min-height: 78px;
-
-            .title-box {
-                h3 {
-                    font-weight: 700;
-                    font-size: 1.2rem;
-
-                    .icon-left {
-                        font-size: 1.3rem;
-                        transition: all .2s ease-in-out;
-
-                        @include media-breakpoint-up(md) {
-                            font-size: 2rem;
-                        }
-
-                        margin: 0 10px 0 0;
-                    }
-
-                    a {
-                        color: #fff;
-                        text-decoration: none;
-
-                        &:hover {
-                            // color: yellow;
-                        }
-
-                        &:hover .icon-left {
-                            // color: chartreuse;  
-                            transform: translateY(-3px);
-
-                        }
+    .card {
+        font-size: 1rem;
+        border: var(--focus-border-card);
+       .card-body {
+        background: var(--bg-focus-card);
+        color: var(--tx-focus-card);
+        .card-text {
+        font-weight: var(--tx-focus-font-weight);
+       }
+    }
 
 
+        .card-image {
+            position: relative;
 
-                    }
+            .image-overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s ease;
+                background: var(--bg-focus-card-overlay);
+            }
 
-
-                }
-
-
-
+            &:hover .image-overlay {
+                opacity: 1;
             }
         }
-    }
 
-    .card.ins-2 {
-        background: var(--bg-col-1);
-
-        .card-body {
-            color: #fff;
-            min-height: 78px;
-
-            .title-box {
-                h3 {
-                    font-weight: 700;
-                    font-size: 1.2rem;
-
-                    .icon-left {
-                        font-size: 1.3rem;
-                        transition: all .2s ease-in-out;
-
-                        @include media-breakpoint-up(md) {
-                            font-size: 2rem;
-                        }
-
-                        margin: 0 10px 0 0;
-                    }
-
-                    a {
-                        color: #fff;
-                        text-decoration: none;
-
-                        &:hover {
-                            // color: yellow;
-                        }
-
-                        &:hover .icon-left {
-                            // color: chartreuse;  
-                            transform: translateY(-3px);
-
-                        }
+        .text-img-over {
+            position: relative;
 
 
+            .overlay {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 100%;
+                width: 100%;
+                opacity: 0;
+                transition: 0.5s ease;
+                background: var(--bg-focus-card-overlay);
+            }
 
-                    }
-
-
-                }
-
-
-
+            &:hover .overlay {
+                opacity: 1;
             }
         }
-    }
 
-    .card.ins-3 {
-        background: var(--bg-col-1);
+        .social-hover {
+            color: var(--tx-focus-hover);
+            font-size: 30px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            text-align: center;
 
-        .card-body {
-            color: #fff;
-            min-height: 78px;
 
-            .icon-right {
-                font-size: 1.3rem;
+            .fa-share-alt {
+                color: var(--tx-focus-hover);
 
-                @include media-breakpoint-up(md) {
-                    font-size: 2.5rem;
+                &:hover {
+                    color: var(--tx-color-1);
                 }
-
-                color: #fff;
-                margin: 0 10px 0 10px;
             }
 
 
+        }
 
-            h3 {
-                font-weight: 700;
-                font-size: 1.2rem;
-                margin-left: 10px;
+        .hover-text {
+            position: relative;
+            text-align: center;
+            color: var(--tx-focus-hover);
+        }
 
+        .bottom-right-tag {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            background: var(--bg-focus-tag-color-1);
+            padding: 5px 10px 5px 10px;
+            border-top-left-radius: calc(.25rem - 1px);
+            font-size: 0.8rem;
+            font-weight: 200;
+            color: var(--tx-focus-tag-color-1);
+            z-index: 1;
+
+            a {
+                color: var(--tx-focus-tag-color-1);
+                text-decoration: none;
+            }
+
+            a:hover {
+                color: var(--tx-focus-tag-color-1);
+                text-decoration: underline;
             }
 
         }
-    }
 
-    
+
+
+        .sub-cat {
+            font-weight: 600;
+            font-size: 1rem;
+
+            .bg-category {
+                background: var(--bg-focus-cat);
+                color: var(--tx-focus-cat);
+            }
+
+            a {
+                color: var(--tx-focus-tag-a);
+            }
+        }
+
+
+
+        .card-title {
+            font-family: var(--font1);
+            font-weight: 600;
+            font-size: 1.3rem;
+            /* height: 73px;
+  overflow: hidden; */
+        }
+
+        .card-footer {
+            background: var(--bg-focus-footer);
+            color: var(--tx-focus-footer);
+
+            .card-footer__info {
+                font-size: 1rem;
+                font-weight: 300;
+                position: relative;
+            }
+
+        }
+
+
+        .read-more {
+            position: absolute;
+            right: 0;
+            font-weight: 600;
+        }
+
+        .read-more-1 {
+            text-decoration: none;
+            position: relative;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-1::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            height: 2px;
+            background: var(--bg-rm-color-1);
+            transform: scaleX(0);
+            transform-origin: left;
+            transition: transform 250ms ease-in;
+        }
+
+        .read-more-1:hover {
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-1:hover::after {
+            transform: scaleX(1);
+            transform-origin: right;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-2 {
+            text-decoration: none;
+            position: relative;
+            margin-right: 15px;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-2::after {
+            content: "";
+            /* You should use \ and not /*/
+            font-family: "Font Awesome 5 Free";
+            /* This is the correct font-family*/
+            position: absolute;
+            right: -18px;
+            bottom: 0;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-2:hover {
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-2:hover::after {
+            transform: translate(3px, 0);
+            transition: all 0.1s ease-in;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-3 {
+            text-decoration: none;
+            position: relative;
+            color: var(--tx-focus-footer);
+        }
+
+        .read-more-3:hover {
+            color: var(--tx-focus-footer);
+            text-decoration: underline;
+        }
+
+
+    }
 }
+
 
 .posts-section {
-    background: aliceblue;
+    background: var(--bg-post-section);
     font-family: var(--font1);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
+
 
     .title-section {
         font-weight: 700;
         text-transform: uppercase;
+        color: var(--tx-post-section-title);
+    }
+
+    .bg-card {
+        background: var(--bg-post-title);
+        color: var(--tx-post-title);
     }
 
     .post-body h2 {
-
-        font-weight: 600;
-        // font-size: 1.3rem;
-        // @include media-breakpoint-up(md) {
-        //     font-size: 13rem;
-        // }
+        font-weight: 600;      
     }
 
     .post-info {
@@ -240,7 +457,7 @@
             width: 100%;
             opacity: 0;
             transition: 0.5s ease;
-            background-color: var(--bg-col-1);
+            background: var(--bg-post-image-overlay);
         }
 
         &:hover .overlay {
@@ -272,36 +489,134 @@
     }
 
 
-    // .tag-list {
-    //     .tag {
+}
 
-    //         background: var(--bg-tag-color-1);
 
-    //         text-transform: uppercase;
-    //         font-size: .8rem;
-    //         font-weight: 500;
-    //         margin-right: 5px;
-    //         color: var(--tx-tag-color-1);
-    //         z-index: 1;
+.interest-section {
+    background: var(--bg-interest-section);
+    font-family: var(--font1);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
 
-    //         a {
-    //             color: var(--tx-tag-color-1);
-    //             text-decoration: none;
-    //         }
+    .title-section {
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--tx-interest-section-title);
+    }
 
-    //         a:hover {
-    //             color: var(--tx-tag-color-1);
-    //             text-decoration: underline;
-    //         }
+    .card.ins-1 {
+        background: var(--bg-interest-card1);
 
-    //     }
-    // }
+        .card-body {
+            color: var(--tx-interest-card1-body);
+            min-height: 78px;
+
+            .title-box {
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+
+                    .icon-left {
+                        font-size: 1.3rem;
+                        transition: all .2s ease-in-out;
+
+                        @include media-breakpoint-up(md) {
+                            font-size: 2rem;
+                        }
+
+                        margin: 0 10px 0 0;
+                    }
+
+                    a {
+                        color: var(--tx-interest-card1-link);
+                        text-decoration: none;
+
+                        &:hover {
+                            // color: yellow;
+                        }
+
+                        &:hover .icon-left {
+                            // color: chartreuse;  
+                            transform: translateY(-3px);
+
+                        }
+
+
+
+                    }
+
+
+                }
+
+
+
+            }
+        }
+    }
+
+    .card.ins-2 {
+        background: var(--bg-interest-card2);
+
+        .card-body {
+            color: var(--tx-interest-card2-body);
+            min-height: 78px;
+
+            .title-box {
+                h3 {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+
+                    .icon-left {
+                        font-size: 1.3rem;
+                        transition: all .2s ease-in-out;
+
+
+                        @include media-breakpoint-up(md) {
+                            font-size: 2rem;
+
+                        }
+
+                        margin: 0 10px 0 0;
+                    }
+
+                    a {
+                        color: var(--tx-interest-card1-link);
+                        text-decoration: none;
+
+                        &:hover {
+                            // color: yellow;
+                        }
+
+                        &:hover .icon-left {
+                            // color: chartreuse;  
+                            transform: translateY(-3px);
+
+                        }
+
+
+
+                    }
+
+
+                }
+
+
+
+            }
+        }
+    }
+
+
+
+
 }
 
 // END BUTTON GENERAL
 .custom-slider {
     font-family: var(--font1);
     background: rgb(219, 234, 243);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
 
     .title-section {
         font-weight: 700;
@@ -447,9 +762,10 @@
 }
 
 .slider-section {
-
     font-family: var(--font1);
     background: rgb(219, 234, 243);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
 
     .title-section {
         font-weight: 700;
@@ -735,6 +1051,8 @@
 .agenda-section {
     font-family: var(--font1);
     background: rgb(219, 234, 243);
+    -webkit-transition: all .3s linear 0s;
+    transition: all .3s linear 0s;
 
     .title-section {
         font-weight: 700;
@@ -1015,228 +1333,4 @@
 
     // END BOX-5
 
-}
-
-
-.focus-section {
-    background: aliceblue;
-    font-family: var(--font1);
-
-    .title-section {
-
-        font-weight: 700;
-        text-transform: uppercase;
-    }
-
-    .card {
-        font-size: 1rem;
-
-
-        .card-image {
-            position: relative;
-
-            .image-overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 100%;
-                width: 100%;
-                opacity: 0;
-                transition: 0.5s ease;
-                background: rgba(0, 89, 179, 0.5);
-            }
-
-            &:hover .image-overlay {
-                opacity: 1;
-            }
-        }
-
-        .text-img-over {
-            position: relative;
-
-
-            .overlay {
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                left: 0;
-                right: 0;
-                height: 100%;
-                width: 100%;
-                opacity: 0;
-                transition: 0.5s ease;
-                background-color: var(--bg-col-1);
-            }
-
-            &:hover .overlay {
-                opacity: 1;
-            }
-        }
-
-        .social-hover {
-            color: var(--tx-color-1);
-            font-size: 30px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            -webkit-transform: translate(-50%, -50%);
-            -ms-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-            text-align: center;
-
-
-            .fa-share-alt {
-                color: var(--tx-color-1);
-
-                &:hover {
-                    color: var(--tx-color-1);
-                }
-            }
-
-
-        }
-
-        .hover-text {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-
-        .bottom-right-tag {
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            background: var(--bg-tag-color-1);
-            padding: 5px 10px 5px 10px;
-            border-top-left-radius: calc(.25rem - 1px);
-            font-size: 0.8rem;
-            font-weight: 200;
-            color: var(--tx-tag-color-1);
-            z-index: 1;
-
-            a {
-                color: var(--tx-tag-color-1);
-                text-decoration: none;
-            }
-
-            a:hover {
-                color: var(--tx-tag-color-1);
-                text-decoration: underline;
-            }
-
-        }
-
-
-
-        .sub-cat {
-            font-weight: 600;
-            font-size: 1rem;
-
-            .bg-category {
-                background: var(--bg-col-1);
-                color: var(--tx-color-1);
-            }
-        }
-
-
-
-        .card-title {
-            font-family: var(--font1);
-            font-weight: 600;
-            font-size: 1.3rem;
-            /* height: 73px;
-  overflow: hidden; */
-        }
-
-        .card-footer {
-            background-color: var(--bg-ft-col-1);
-            color: var(--tx-ft-color-1);
-
-            .card-footer__info {
-                font-size: 1rem;
-                font-weight: 300;
-                position: relative;
-            }
-
-        }
-
-
-        .read-more {
-            position: absolute;
-            right: 0;
-            font-weight: 600;
-        }
-
-        .read-more-1 {
-            text-decoration: none;
-            position: relative;
-            color: var(--tx-rm-color-1);
-        }
-
-        .read-more-1::after {
-            content: "";
-            position: absolute;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            height: 2px;
-            background: var(--bg-rm-color-1);
-            transform: scaleX(0);
-            transform-origin: left;
-            transition: transform 250ms ease-in;
-        }
-
-        .read-more-1:hover {
-            color: var(--tx-rm-color-1);
-        }
-
-        .read-more-1:hover::after {
-            transform: scaleX(1);
-            transform-origin: right;
-            color: var(--tx-rm-color-1);
-        }
-
-        .read-more-2 {
-            text-decoration: none;
-            position: relative;
-            margin-right: 15px;
-            color: var(--tx-rm-color-1);
-        }
-
-        .read-more-2::after {
-            content: "";
-            /* You should use \ and not /*/
-            font-family: "Font Awesome 5 Free";
-            /* This is the correct font-family*/
-            position: absolute;
-            right: -18px;
-            bottom: 0;
-            color: var(--tx-rm-color-1);
-        }
-
-        .read-more-2:hover {
-            color: var(--tx-rm-color-1);
-        }
-
-        .read-more-2:hover::after {
-            transform: translate(3px, 0);
-            transition: all 0.1s ease-in;
-            color: var(--tx-rm-color-1);
-        }
-
-        .read-more-3 {
-            text-decoration: none;
-            position: relative;
-            color: var(--tx-rm-color-1);
-        }
-
-        .read-more-3:hover {
-            color: var(--tx-rm-color-1);
-            text-decoration: underline;
-        }
-
-
-    }
 }
