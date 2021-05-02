@@ -1,13 +1,13 @@
 
   
 
-# Componenti Bootstrap 5 per la pubblica amministrazione
+# Componenti Bootstrap 5
 
   
 
-Collezione di componenti standard da utilizzare in progetti per la pubblica amministrazione
+Collezione di componenti standard da utilizzare in progetti
 
-WORKING IN PROGRESS
+
   
 
 **Tecnologie utilizzate**
@@ -30,3 +30,6 @@ WORKING IN PROGRESS
 - Icone - Font Awesome 5
 
 - Font - Titillium
+
+
+WORKING IN PROGRESS
