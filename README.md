@@ -5,7 +5,7 @@
 
   
 
-Collezione di componenti standard da utilizzare in progetti
+Collezione di componenti standard da utilizzare in progetti DARK MODE/LIGHT MODE
 
 
   
